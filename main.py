@@ -1,22 +1,18 @@
 # Import Required liibraries 
 import streamlit as st 
-import pickle
 import numpy as np
 import pandas as pd
 import plotly.express as px
 import plotly.subplots as sp
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
-import seaborn as sns
 plt.style.use('ggplot')
 from statsmodels.tsa.seasonal import  seasonal_decompose
-from statsmodels.tsa.stattools import adfuller
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
-from statsmodels.tsa.arima.model import ARIMA
-from statsmodels.graphics.tsaplots import plot_acf, plot_pacf, month_plot, quarter_plot
-from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error, r2_score
+from statsmodels.graphics.tsaplots import month_plot, quarter_plot
+from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error, 
 import pmdarima as pm
-from pmdarima import auto_arima
+
 
 
 # Define a custom colors  using a hex value

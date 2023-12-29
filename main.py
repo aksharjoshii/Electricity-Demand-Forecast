@@ -10,7 +10,7 @@ plt.style.use('ggplot')
 from statsmodels.tsa.seasonal import  seasonal_decompose
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 from statsmodels.graphics.tsaplots import month_plot, quarter_plot
-from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error, 
+from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error
 import pmdarima as pm
 
 

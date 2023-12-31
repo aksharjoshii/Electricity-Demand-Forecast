@@ -13,7 +13,11 @@ from statsmodels.graphics.tsaplots import month_plot, quarter_plot
 from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error
 import pmdarima as pm
 
-
+# set page 
+st.set_page_config(page_title='Electricity Demand Forecast', 
+                   layout='wide',
+                   page_icon= 'business-forecasting-icon-vector-17324352.jpg'
+                   )
 
 # Define a custom colors  using a hex value
 h1_color = '#008b8b'
